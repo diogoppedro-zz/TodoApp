@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Todo list</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <header>
+           <h1>Diogo's Todo List</h1>
+       </header>
+       <form>
+           <input type="text" class="todo-input">
+           <button class="todo-button" type="submit">
+               <i class="fas fa-plus-square"></i>
+           </button>
+
+           <div class="select">
+               <select name="todos" class="filter-todo">
+                   <option value="all">All</option>
+                   <option value="completed">completed</option>
+                   <option value="uncompleted">uncompleted</option>
+               </select>
+            </div>
+       
+        </form>
+       
+        <div class="todo-container">
+           <ul class="todo-list"></ul>
+         
+       </div>
+
+
+       
+        <script src="app.js" ></script>
+    </body>
+</html>
